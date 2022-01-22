@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CamerGalleryApp</title>
+</head>
+<body>
+    <div class="videoCont">
+        <video autoplay controls></video>
+    </div>
+    <div class="bottom-cont">
+        <div class="action-btn">
+            <div class="img-btn">
+                <button class="btn btn1 "></button>
+            </div>
+            <div class="video-btn">
+                <button class="btn btn2 "></button>
+            </div>
+        </div>
+        <div class="effect">
+            <div class="effect1 eff"></div>
+            <div class="effect2 eff"></div>
+            <div class="effect3 eff"></div>
+            <div class="effect4 eff"></div>
+            <div class="effect5 eff"></div>
+        </div>
+    </div>
+    <div class="filter-layer"></div>
+    <span class="material-icons gallery">
+        collections
+    </span>
+    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+    "></script>
+    <script src="db.js"></script>    
+    <script src="script.js"></script>
+    <script>
+        let gallery = document.querySelector(".gallery");
+        gallery.addEventListener("click", (e) => {
+            location.assign("./gallery.html");
+        })
+    </script>
+</body>
+</html>

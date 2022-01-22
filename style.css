@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    /* overflow: hidden; */
+}
+.videoCont
+{
+    width:100vw;
+    height:80vh;
+}
+video{
+    width:100%;
+    height:100%;
+}
+.bottom-cont
+{
+    height:20vh;
+    width:100vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:1%;
+    background-color: black;
+    color:white;
+    z-index: 2;
+}
+.action-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+    width: 15%;
+    z-index: inherit;
+}
+.scale-capture{
+    animation: scale-capture;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.scale-record{
+    animation: scale-record;
+    animation-iteration-count:infinite ;
+    animation-duration: 1s;
+}
+.btn{
+    color:black;
+    border-radius: 50%;
+    background-color: black;
+    height: 30px;
+    width:30px;
+    border: none;
+}
+.img-btn{
+    border-radius: 50%;
+    height: 50px;
+    width:50px;
+    border:4px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-btn{
+    border-radius: 50%;
+    height: 50px;
+    width:50px;
+    border:4px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn1{
+    background-color: white;
+}
+.btn2{
+    background-color: red;
+}
+
+.effect{
+display:flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+width:30%;
+z-index: inherit;
+}
+
+.eff{
+   /* background-color: rgb(71, 71, 104); */
+   background-image: url("https://i.picsum.photos/id/1003/1181/1772.jpg?hmac=oN9fHMXiqe9Zq2RM6XT-RVZkojgPnECWwyEF1RvvTZk");
+    height:4rem;
+    width:4rem;
+    border-radius: 10px;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.effect1{
+    background-color: rgba(138, 124, 49, 0.699);
+    background-blend-mode: color-burn;
+}
+.effect2{
+    background-color: rgba(159, 56, 175, 0.199);
+    background-blend-mode: color-burn;
+}
+.effect3{
+    background-color: rgba(172, 137, 42, 0.445);
+    background-blend-mode: color-burn;
+}
+.effect4{
+    background-color: rgba(89, 143, 53, 0.377);
+    background-blend-mode: color-burn;
+}
+.effect5{
+    background-color: transparent;
+    background-blend-mode: color-burn;
+}
+.filter-layer{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100vh;
+    width:100vw;
+    /* background-color: rgba(255, 0, 0, 0.205); */
+    z-index: 1;
+}
+@keyframes scale-capture{
+    0%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform:scale(1.1);
+    }
+}
+@keyframes scale-record{
+    0%{
+        transform:scale(0.8);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+.material-icons {
+    color: white;
+    font-size: 3rem;
+}
+.gallery {
+    position: absolute;
+    right: 46%;
+    bottom: 1rem;
+    z-index: 2;
+}
+.gallery:hover {
+    cursor: pointer;
+}
